@@ -20,12 +20,13 @@ const knex = require('knex');
    const db = knex({
      client: 'pg',
      connection: {
-    host : '127.0.0.1',
+    host : 'https://smart-brain-api-ceb8.onrender.com',
     port : 5432,
     user : 'postgres',
     password : 'kaif',
     database : 'smart-brain'
   }
+  // 127.0.0.1
 });
 const pg = require('knex')({
   client: 'pg',
