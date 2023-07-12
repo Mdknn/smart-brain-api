@@ -20,7 +20,7 @@ const knex = require('knex');
    const db = knex({
      client: 'pg',
      connection: {
-    host : 'https://smart-brain-api-ceb8.onrender.com',
+    host : '127.0.0.1',
     port : 5432,
     user : 'postgres',
     password : 'kaif',
@@ -72,7 +72,7 @@ app.use(express.json());
 
 
 // };
-app.get('/',(req,res) => {res.send('it is working')})
+// app.get('/',(req,res) => {res.send('it is working')})
 
 app.post('/user', (req,res,) => {
   // if(req.body.email === database.users[0].email && req.body.password === database.users[0].password)
